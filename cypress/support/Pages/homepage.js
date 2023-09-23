@@ -6,6 +6,7 @@ import { dataSpellIdeDeveloperTools } from "./developerTools/IDE's/dataSpell.IDE
 import { forIndvidualUseLocator } from "./store/developerTools/forInvidualUse";
 import { forTeamsAndOrganizationsLocator } from "./store/developerTools/forTeamsAndOrganizations";
 import { frequentAskedQuestions } from "./store/salesSupport/FAQ";
+import { contactSalesLocator } from "./store/salesSupport/contactSales";
 
 export class mainHomePage {
   // HomePage Main Menu Header Component
@@ -45,5 +46,9 @@ export class mainHomePage {
 
   get homePageStoreDropdownToSelectFAQS() {
     return new frequentAskedQuestions();
+  }
+
+  get homePageStoreDropdownToSelectContactSales() {
+    return new contactSalesLocator();
   }
 }

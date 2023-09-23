@@ -53,8 +53,14 @@ describe("Test Home Page Elements", () => {
       .click({ force: true })
       .go("back");
 
-    MainHomePage.homePageStoreDropdownToSelectFAQS.getFAQLocator.click({
-      force: true,
-    });
+    MainHomePage.homePageStoreDropdownToSelectFAQS.getFAQLocator
+      .click({
+        force: true,
+      })
+      .go("back");
+
+    MainHomePage.homePageStoreDropdownToSelectContactSales.getContactSalesLocator.click(
+      { force: true }
+    );
   });
 });

@@ -2,8 +2,6 @@
 
 export class frequentAskedQuestions {
   get getFAQLocator() {
-    return cy
-      .get('a[href="https://sales.jetbrains.com/hc/en-gb/]')
-      .contains("FAQ");
+    return cy.get('[data-test="main-submenu-item"]').contains("FAQ");
   }
 }
