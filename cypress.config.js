@@ -18,14 +18,8 @@ module.exports = defineConfig({
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     video: true,
-    videoUploadOnPasses: true,
     viewportHeight: 1200,
     viewportWidth: 1920,
-    reporter: "cypress-multi-reporters",
-    reporterOptions: {
-      configFile: "reporter-config.json",
-    },
-
     baseUrl: "https://www.jetbrains.com/",
   },
 });
