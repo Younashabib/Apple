@@ -9,7 +9,7 @@ beforeEach(() => {
 });
 
 describe("Verify Support Page and Check its elements", () => {
-  it("", () => {
+  it("Verify the Support Page Elements", () => {
     let Store = MainHomePage.homePageHeaderMenu;
     let StorePage =
       MainHomePage.homePageSupportDropdownToSelectProductAndTechnicalSupport;
@@ -18,5 +18,7 @@ describe("Verify Support Page and Check its elements", () => {
     StorePage.verifyHeader;
     StorePage.textOfThePage;
     StorePage.intelliJIDEA;
+    StorePage.reSharper;
+    StorePage.TeamCity;
   });
 });
