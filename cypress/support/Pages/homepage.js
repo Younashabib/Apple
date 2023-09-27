@@ -7,6 +7,7 @@ import { forIndvidualUseLocator } from "./store/developerTools/forInvidualUse";
 import { forTeamsAndOrganizationsLocator } from "./store/developerTools/forTeamsAndOrganizations";
 import { frequentAskedQuestions } from "./store/salesSupport/FAQ";
 import { contactSalesLocator } from "./store/salesSupport/contactSales";
+import { supportPageLocator } from "./support/supportPage";
 
 export class mainHomePage {
   // HomePage Main Menu Header Component
@@ -50,5 +51,10 @@ export class mainHomePage {
 
   get homePageStoreDropdownToSelectContactSales() {
     return new contactSalesLocator();
+  }
+
+  // For Support Page
+  get homePageSupportDropdownToSelectProductAndTechnicalSupport() {
+    return new supportPageLocator();
   }
 }

@@ -3,6 +3,7 @@
 import { mainHomePage } from "../support/Pages/homepage";
 beforeEach(() => {
   cy.visit("/");
+  cy.acceptCookies();
 });
 
 let MainHomePage = new mainHomePage();
