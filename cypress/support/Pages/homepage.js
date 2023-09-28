@@ -3,6 +3,7 @@ import { aquaIdeDeveloperTools } from "./developerTools/IDE's/Aqua.IDE.developer
 import { clionIdeDeveloperTools } from "./developerTools/IDE's/CLion.IDE.developerTools";
 import { dataGripDeveleporTools } from "./developerTools/IDE's/DataGrip.developerTools";
 import { dataSpellIdeDeveloperTools } from "./developerTools/IDE's/dataSpell.IDE.developerTools";
+import { solutionPageLocator } from "./solutions/solutionsPage";
 import { forIndvidualUseLocator } from "./store/developerTools/forInvidualUse";
 import { forTeamsAndOrganizationsLocator } from "./store/developerTools/forTeamsAndOrganizations";
 import { frequentAskedQuestions } from "./store/salesSupport/FAQ";
@@ -56,5 +57,11 @@ export class mainHomePage {
   // For Support Page
   get homePageSupportDropdownToSelectProductAndTechnicalSupport() {
     return new supportPageLocator();
+  }
+
+  //For Education Page
+
+  get homePageEducationDropdown() {
+    return new solutionPageLocator();
   }
 }
