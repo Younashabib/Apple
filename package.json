@@ -3,6 +3,13 @@
     "cypress": "^13.2.0"
   },
   "dependencies": {
-    "cookie": "^0.5.0"
+    "cookie": "^0.5.0",
+    "lambdatest-cypress-cli": "^3.0.18"
+  },
+  "scripts": {
+    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-Chrome-Headless": "npx cypress run --browser chrome",
+    "triggerAllTests-Chrome": "npx cypress run --browser chrome --headed",
+    "triggerAllTests-Cypress-Dashboard": "npx cypress run --record --key 46663d84-ee2b-41b6-a2be-8e08e7147fef"
   }
 }
