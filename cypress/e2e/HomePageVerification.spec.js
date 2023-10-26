@@ -4,7 +4,7 @@ import { mainHomePage } from "../support/Pages/homepage";
 let MainHomePage = new mainHomePage();
 
 beforeEach(() => {
-  //let my name is younas
+  // let this is my jdfjckd
   cy.visit("/");
   cy.acceptCookies();
 });
