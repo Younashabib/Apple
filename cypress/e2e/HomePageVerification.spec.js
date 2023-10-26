@@ -4,12 +4,13 @@ import { mainHomePage } from "../support/Pages/homepage";
 let MainHomePage = new mainHomePage();
 
 beforeEach(() => {
+  //let my name is younas
   cy.visit("/");
   cy.acceptCookies();
 });
 
 describe("Test Home Page Elements", () => {
-  it("Verify Home Page", () => {
+  it.only("Verify Home Page", () => {
     let Header = MainHomePage.homePageHeaderMenu;
     Header.getDeveloperTools.click(); //.should("exist");
     Header.getTeamTools.click(); //.should("exist");
